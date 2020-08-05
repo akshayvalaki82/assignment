@@ -1,0 +1,499 @@
+<html>
+
+<head>
+    <title>
+        My Website
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #head {
+            border: solid white;
+
+
+        }
+
+        .img {
+            margin-left: 25%;
+            margin-top: 0em;
+
+
+        }
+
+        #text {
+            position: absolute;
+            right: 13em;
+            top: 2em;
+
+        }
+
+        .search {
+            border-radius: 12px;
+            border: solid gray;
+            padding: 12px;
+            width: 180px;
+            height: 7px;
+            text-align: end;
+            position: absolute;
+            right: 5em;
+            top: 3em;
+        }
+
+        #nav {
+
+            text-align: end;
+        }
+
+        #nav li {
+            display: inline;
+            padding-right: 25px;
+        }
+
+        .B {
+            height: 7em;
+            width: 100%;
+            background-color: darkgrey;
+        }
+
+        .b1 {
+            margin-left: 25%;
+            padding: 1em;
+            /*position: absolute;
+        left: 30%;*/
+        }
+
+        #b2 {
+            color: white;
+            position: absolute;
+            top: 10em;
+            left: 33%;
+        }
+
+        #b3 {
+            border: 2px solid white;
+            padding: 10px;
+            width: 180px;
+            text-align: center;
+            background-color: dimgrey;
+            position: absolute;
+            top: 7.2em;
+            left: 65%;
+            color: white;
+        }
+
+        #c2 {
+            position: absolute;
+            top: 33em;
+            left: 23em;
+        }
+
+        #c3 {
+            border: solid transparent;
+            width: 14em;
+            height: 8em;
+            position: absolute;
+            top: 14em;
+            left: 60%;
+        }
+
+        #c4 {
+            position: absolute;
+            top: 39em;
+            right: 20%;
+        }
+
+
+
+        .D {
+            display: flex;
+            align-items: center;
+            padding-left: 23%;
+        }
+
+        .D div {
+            border: 1px solid transparent;
+        }
+
+
+
+        .d1 {
+            color: gray;
+            font-size: 18px;
+        }
+
+        #dd2 {
+            color: black;
+        }
+
+        #d3 {
+            border: 8px solid gray;
+            margin: 25px;
+        }
+
+        .F {
+            background-image: url(BingImageOfTheDay.jpg);
+        }
+
+        .f1 {
+            display: flex;
+            margin-left: 23%;
+        }
+
+        #f7 {
+            text-align: center;
+        }
+
+        .f2 {
+            border: none;
+            width: 20em;
+            height: 23em;
+            margin: 1em;
+            padding: 2em;
+            background-color: white;
+            opacity: 0.7;
+        }
+
+        .f5 {
+            border: none;
+            width: 20em;
+            height: 23em;
+            margin: 1em;
+            padding: 2em;
+            background-color: white;
+            opacity: 0.7;
+        }
+
+        #f3 {
+            /* margin-left: 7em;*/
+        }
+
+        .f4 {
+            background-color: 99FF00;
+            border: none;
+            color: white;
+            padding: 10px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            width: 250px;
+            margin-left: 2em;
+            /*border: solid 99FF00;
+            width: 12em;
+            height: 1em;
+            text-align: center;
+            padding: 10px;
+            background-color: 99FF00;
+            color: honeydew;*/
+        }
+
+        /* slide show*/
+        /* Slideshow container */
+        .slideshow-container {
+            width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-left: 8em;
+            margin-right: 8em;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 5em;
+            width: 100%;
+            text-align: center;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        #sst {
+            font-size: 5em;
+
+        }
+
+        /*#ssp
+        {
+            position: absolute;
+            top: 8.4em;
+            right: 40em;
+        }*/
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="head">
+        <div class="img">
+            <img src="logo.jpg" width="300" height="110">
+        </div>
+
+        <h2 id="text">Call us toady! (02) 9017 8413</h2>
+
+        <div class="search">
+            <img id="S" src="search.jpg">
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a style="color: darkgreen;">Home</a></li>
+                <li><a style="color:darkgray;" href="#">Dating Blog</a></li>
+                <li><a style="color:darkgray;" href="#">Who We Help</a></li>
+                <li><a style="color:darkgray;" href="#">Why Vital</a></li>
+                <li><a style="color:darkgray;" href="#">Reviews</a></li>
+                <li><a style="color:darkgray;" href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+    </header>
+    <div class="B">
+        <div class="b1">
+            <img src="icon5.jpg" alt=""><br>
+            <h3 id="b2">Lorem Ipsum Is Simply Dummy Text of printing Ind.</h3>
+            <h2 id="b3">Download now </h2>
+        </div>
+    </div>
+    <div class="C">
+        <div class="c1">
+            <img src="hbg.jpg" alt="" width="100%">
+            <img id="c2" src="yt.jpg" alt="">
+            <h1 id="c3">Lorem ipsum dolor sit posuer<br>
+                <center> long dolor sit amet.<br> it has survied not on?</center>
+            </h1>
+            <img id="c4" src="cn.jpg" alt=""><br><br><br><br><br>
+        </div>
+    </div>
+
+
+    <div class="D">
+        <div class="d1">
+            <b>
+                <h1 id="dd2">About Us</h1><br>
+            </b>
+            <h2 id="">It is long established face that a<br>
+                reader will be distracted</h2><br><br>
+            <b>The point of using lorem is </b> that it has more-or-less Normal<br>
+            bution of latter, as oppesed to using 'contet here',making <br>
+            look like readable english. <br>
+            <b>there are many variation of passages of</b>lorem ipsum available, but the<br>
+            majority have suffered alteration in some form<br>
+            <img src="arrow.jpg" alt=""><b> 2000 year old. richard mcclint</b><br>
+            <img src="arrow.jpg" alt=""><b> discoverd the undoubtable source</b><br>
+            <img src="arrow.jpg" alt=""><b> lorem ipsum dolor sit ameet..</b><br>
+            reaming essentially unchanged it was popularised in the 1960s with <br>
+            the release letrasest sheets containing.<br><br><br>
+            <img src="cn.jpg" alt="">
+        </div>
+        <div class="d2">
+            <img id="d3" src="user.jpg" alt="">
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="E">
+        <img src="hbg4.jpg" alt="" width="100%">
+    </div>
+    <br><br><br><br>
+    <div class="F">
+        <h3 id="f7">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has<br>
+            been the industry's standard ever since the 1500s, when an unknown printer took a <br>
+            galley of type and scrambled it to make a type specimen book.
+        </h3><br><br>
+
+        <div class="f1">
+            <div class="f2">
+                <center><img id="f3" src="wn.jpg" alt=""><br><br>
+                    <h2>What is totem ipsum?</h2>
+                    Lorem Ipsum is simply dummy text of the end<br>
+                    typesetting industry Lorem tuaum has been the<br>
+                    Industry's standard dummy text ever since<br>
+                    the I500s, when an unknown pnnter<br>
+                    took a galley of type and scrambled<br><br>
+
+                    it to make a type specimen book. It hes survived<br>
+                    not only five centuries, but also the leap into we<br>
+                    electromc tynesettmg,remammg essentially <br>
+                    unchanged. <br> <br><br>
+                    <button class="f4">Get Started > </button>
+                </center>
+            </div>
+            <div class="f5">
+                <center>
+                    <img id="f3" src="mn.jpg" alt=""><br><br>
+                    <h2>Where dose it come?</h2>
+                    It has survived not only five centuries, but<br>
+                    also the leap Into electronic typesetting, remain- <br>
+                    ing essentially unchanged popularised. <br> <br> <br>
+
+
+                    Contrary to popular belief, Lorem <br>
+                    Ipsum is not simply random text It has <br>
+                    lroots in apiece of classmalLatm Lterature from <br>
+                    45 BC, making .t over MOD years old number. Is <br>
+                    this Fachard McChntock,<br> <br><br>
+
+                    <button class="f4">Get Started > </button>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!--silde show -->
+    <div class="ss">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="ss1.jpg" style="width:100%">
+                <div class="text">
+                    <h1 id="sst">What Our Clients Say</h1><br> <br>
+                    <img src="client_img.jpg" alt=""><br> <br><br> <br><br> <br><br> <br><br> <br>
+                    <!-- <img id="ssp" src="tooltip-bg.jpg" alt="">--> 
+                    'Lorem Ipsum is simply dummy text of the printing and typesetting industly. Lorem Ipsum has been<br>
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of <br>
+                    type and scrambled it to make a type specimen book it has survived not only <br> <br>
+                    <h2>- MT. Chatswood</h2>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="ss2.jpg" style="width:100%">
+                <div class="text">
+                    <h1 id="sst">What Our Clients Say</h1><br> <br>
+                    <img src="client_img.jpg" alt=""><br> <br><br> <br><br> <br><br> <br><br> <br>
+                    <!-- <img id="ssp" src="tooltip-bg.jpg" alt="">--> 
+                    'Lorem Ipsum is simply dummy text of the printing and typesetting industly. Lorem Ipsum has been<br>
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of <br>
+                    type and scrambled it to make a type specimen book it has survived not only <br> <br>
+                    <h2>- MT. Chatswood</h2>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="ss3.jpg" style="width:100%">
+                <div class="text">
+                    <h1 id="sst">What Our Clients Say</h1><br> <br>
+                    <img src="client_img.jpg" alt=""><br> <br><br> <br><br> <br><br> <br><br> <br>
+                    <!-- <img id="ssp" src="tooltip-bg.jpg" alt="">--> 
+                    'Lorem Ipsum is simply dummy text of the printing and typesetting industly. Lorem Ipsum has been<br>
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of <br>
+                    type and scrambled it to make a type specimen book it has survived not only <br> <br>
+                    <h2>- MT. Chatswood</h2>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </div>
+    
+
+
+
+
+</body>
+
+</html>

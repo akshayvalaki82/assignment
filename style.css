@@ -1,0 +1,412 @@
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #head {
+            border: solid white;
+
+
+        }
+
+        .img {
+            margin-left: 25%;
+            margin-top: 0em;
+
+
+        }
+
+        #text {
+            position: absolute;
+            right: 13em;
+            top: 2em;
+
+        }
+
+        .search {
+            border-radius: 12px;
+            border: solid gray;
+            padding: 12px;
+            width: 180px;
+            height: 7px;
+            text-align: end;
+            position: absolute;
+            right: 5em;
+            top: 3em;
+        }
+
+        #nav {
+
+            text-align: end;
+        }
+
+        #nav li {
+            display: inline;
+            padding-right: 25px;
+        }
+
+        .B {
+            height: 7em;
+            width: 100%;
+            background-color: darkgrey;
+        }
+
+        .b1 {
+            margin-left: 25%;
+            padding: 1em;
+            /*position: absolute;
+        left: 30%;*/
+        }
+
+        #b2 {
+            color: white;
+            position: absolute;
+            top: 10em;
+            left: 33%;
+        }
+
+        #b3 {
+            border: 2px solid white;
+            padding: 10px;
+            width: 180px;
+            text-align: center;
+            background-color: dimgrey;
+            position: absolute;
+            top: 7.2em;
+            left: 65%;
+            color: white;
+        }
+
+        #c2 {
+            position: absolute;
+            top: 33em;
+            left: 23em;
+        }
+
+        #c3 {
+            border: solid transparent;
+            width: 14em;
+            height: 8em;
+            position: absolute;
+            top: 14em;
+            left: 60%;
+        }
+
+        #c4 {
+            position: absolute;
+            top: 39em;
+            right: 20%;
+        }
+
+
+
+        .D {
+            display: flex;
+            align-items: center;
+            padding-left: 23%;
+        }
+
+        .D div {
+            border: 1px solid transparent;
+        }
+
+
+
+        .d1 {
+            color: gray;
+            font-size: 18px;
+        }
+
+        #dd2 {
+            color: black;
+        }
+
+        #d3 {
+            border: 8px solid gray;
+            margin: 25px;
+        }
+
+        .F {
+            background-image: url(BingImageOfTheDay.jpg);
+        }
+
+        .f1 {
+            display: flex;
+            margin-left: 23%;
+        }
+
+        #f7 {
+            text-align: center;
+        }
+
+        .f2 {
+            border: none;
+            width: 20em;
+            height: 27em;
+            margin: 1em;
+            padding: 2em;
+            background-color: white;
+            opacity: 0.7;
+        }
+
+        .f5 {
+            border: none;
+            width: 20em;
+            height: 27em;
+            margin: 1em;
+            padding: 2em;
+            background-color: white;
+            opacity: 0.7;
+        }
+
+        #f3 {
+            /* margin-left: 7em;*/
+        }
+
+        .f4 {
+            background-color: 99FF00;
+            border: none;
+            color: white;
+            padding: 10px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            width: 250px;
+            margin-left: 1em;
+           
+        }
+
+        /* slide show*/
+        /* Slideshow container */
+        .slideshow-container {
+            width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-left: 8em;
+            margin-right: 8em;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 5em;
+            width: 100%;
+            text-align: center;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        #sst {
+            font-size: 5em;
+
+        }
+
+        /*#ssp
+        {
+            position: absolute;
+            top: 8.4em;
+            right: 40em;
+        }*/
+        #olbp
+        {
+            text-align: center;
+            font-size: 5em;
+        }
+        #iolbp
+        {
+            width: 60%;
+        }
+        .blog
+        {
+            display: flex;
+            align-items: center;
+            margin-left: 10em;
+            padding: 5em;
+
+        }
+      
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+          }
+          
+          .button1 {
+            background-color: white; 
+            color: black; 
+            border: 5px solid #4CAF50;
+          }
+          
+          .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+          }
+          .H{
+              background-color: #717171;
+              display: flex;
+              align-items: center;
+              color: white;
+          }
+          .h1
+          {
+            margin-left: 30%;
+            padding-right: 3em;
+          }
+          .h2{
+            padding-right: 3em;
+          }
+          .h4{
+              background-color: #717171;
+              border: 3px solid;
+              padding: 15px;
+          }
+          .J
+          {
+              display: flex;
+              background-color:	#202020;
+              
+          }
+          .j1
+          {
+              margin-left: 20%;
+              margin-top: 20px;
+              padding-right: 3em;
+              color: white;
+          }
+          .j2
+          {
+              padding-top: 1em;
+              color: white;
+          }
+          .L
+          {
+            display: flex;
+            background-color:#202020;
+            color: white;
+
+          }
+          .l1
+          {
+
+              margin-left: 18%;
+              padding: 2em;
+          }
+          .l2
+          {
+            padding: 2em;
+          }
+          .l3
+          {
+            padding: 2em;
+          }
+          .M{
+              display: flex;
+              background-color: #101010;
+              color: white;
+              border: 10px solid #101010;
+          }
+          .m1
+          {
+
+              margin-left: 15%;
+              padding-right: 7em;
+          }
+          .m2
+          {
+            padding-right: 7em;
+          }
+          .N{
+            display: flex;
+            background-color: white;
+            color: grey;
+            
+        }
+        .N1
+        {
+
+            margin-left: 35%;
+            padding-right: 7em;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
